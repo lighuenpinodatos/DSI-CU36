@@ -8,6 +8,10 @@ namespace DSI_CU36
 {
     internal class RecursoTecnologico
     {
+        private int _nro;
+        private Marca _marca;
+        private ListaCambioEstadoRT _CambioEstadoRT;
+        private TipoRecursoTecnologico _tipoRecursoTecnologico; 
 
     }
 }

@@ -21,12 +21,16 @@ namespace DSI_CU36
             //Definimos el usuario
             Usuario u = new Usuario(1, "Juan", "1234", pc);
 
+            //definisiones de modelo y marca
+
             // definiremos la sesion activa
             Sesion activa= new Sesion(u);
+
             //Lista de recursos tecnologicos
             u.obtenerCientifico();
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
         }
     }
 }

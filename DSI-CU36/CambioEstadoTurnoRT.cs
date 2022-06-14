@@ -8,5 +8,7 @@ namespace DSI_CU36
 {
     internal class CambioEstadoTurnoRT
     {
+        private DateTime _fechaDesde;
+        private DateTime? _fechaHasta;
     }
 }
