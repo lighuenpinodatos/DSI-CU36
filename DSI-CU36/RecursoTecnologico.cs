@@ -11,21 +11,11 @@ namespace DSI_CU36
         private int _nro;
         private Modelo _modelo;
         private ListaTurno _turnos;
+        private ListaCambioEstadoRT _cambiosEstadoRT;
         private TipoRecursoTecnologico _tipoRecursoTecnologico;
         private Mantenimiento? _mantenimiento;
         
-        /*public CambioEstadoRT esDisponibleActual()
-        {
-            foreach (CambioEstadoRT cert in list)
-            {
-                if (cert.esFechaActual() && cert.esDisponible())
-                {
-                    return rt;
-                }
-
-            }
-            return null;
-        }*/
+        
         public RecursoTecnologico(int numero, Modelo modelo, ListaTurno turnos, TipoRecursoTecnologico tipoRecursoTecnologico)
         {
             _nro = numero;
@@ -45,6 +35,18 @@ namespace DSI_CU36
         {
             return _modelo.mostrarNombre();
         } 
+        public RecursoTecnologico? esDisponible()
+        {
+            // cambio de estado actual
+            CambioEstadoRT cea = _cambiosEstadoRT.obtenerActual();
+            if (cea.esDisponible()) { return this; }
+            return null;
+            
+        }
+        public ListaTurno obtenerTurnosCancelables(DateTime fechaFinPrevista)
+        {
+            return  
+        }
 
     }
 }

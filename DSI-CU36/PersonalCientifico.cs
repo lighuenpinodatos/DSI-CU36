@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DSI_CU36
 {
     
-    internal class PersonalCientifico
+    public class PersonalCientifico
     {
 
         private string _legajo;
@@ -18,5 +18,9 @@ namespace DSI_CU36
             _id = id;
             _nombre = nombre;
         }
+        public string getNombre()
+        {
+            return _nombre;
+        } 
     }
 }

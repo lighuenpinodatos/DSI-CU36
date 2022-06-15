@@ -10,10 +10,20 @@ namespace DSI_CU36
     {
         private DateTime _fechaHoraInicio;
         private DateTime _fechaHoraFin;
-        private ListaCambioEstadoRT _lcert;
-        public Turno(DateTime fechaHoraInicio, DateTime fechaHoraFin,ListaCambioEstadoRT  lcert)
+        private ListaCambioEstadoTurnoRT _lcert;
+        private PersonalCientifico _pc;
+        public Turno(DateTime fechaHoraInicio, DateTime fechaHoraFin,ListaCambioEstadoTurnoRT lcert, PersonalCientifico pc)
         {
-            
+            _fechaHoraInicio = fechaHoraInicio;
+            _fechaHoraFin = fechaHoraFin;
+            _lcert = lcert;
+            _pc = pc;   
         }
+        public PersonalCientifico obtenerPersonalCientifico()
+        {
+            return _pc;
+        }
+
+
     }
 }

@@ -49,7 +49,8 @@ namespace DSI_CU36
 
             u.obtenerCientifico();
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new FormBienvenida(u.obtenerCientifico()));
+
 
         }
     }

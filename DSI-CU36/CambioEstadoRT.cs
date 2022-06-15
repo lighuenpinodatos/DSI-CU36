@@ -11,6 +11,16 @@ namespace DSI_CU36
     {
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
+        private Estado _estado;
+        private CambioEstadoRT(DateTime fechaDesde,Estado estado)
+        {
+            _fechaDesde = fechaDesde;
 
+            _estado = estado;
+        }
+        public bool esDisponible()
+        {
+            return _estado.esDisponible();
+        }
     }
 }

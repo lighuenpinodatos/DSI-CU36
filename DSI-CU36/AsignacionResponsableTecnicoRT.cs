@@ -11,7 +11,7 @@ namespace DSI_CU36
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
 
-        private List<ListaRecursoTecnologico> list= new List<ListaRecursoTecnologico>();
+        private ListaRecursoTecnologico list;
         private PersonalCientifico _pc; // asosiacion con personal cientifico
         public AsignacionResponsableTecnicoRT(PersonalCientifico _pc, DateTime fechaDesde)
         {
@@ -28,6 +28,11 @@ namespace DSI_CU36
         public PersonalCientifico getPersonalCientifico()
         {
             return _pc;
+        }
+        public ListaRecursoTecnologico busacarRecursosDisponibles()
+        {
+            
+           return list.esDisponible();
         }
     }
 }

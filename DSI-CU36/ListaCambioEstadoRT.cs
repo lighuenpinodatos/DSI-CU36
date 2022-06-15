@@ -10,10 +10,14 @@ namespace DSI_CU36
     internal class ListaCambioEstadoRT
     {
         private List<CambioEstadoRT> list = new List<CambioEstadoRT>();
-
-        public void agregar()
+        
+        public void agregar(CambioEstadoRT cert)
         {
-
+            list.Add(cert);
+        }
+        public CambioEstadoRT obtenerActual()
+        {
+            return list[list.Count - 1];
         }
     }
 }
