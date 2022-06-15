@@ -10,5 +10,10 @@ namespace DSI_CU36
     internal class ListaCambioEstadoRT
     {
         private List<CambioEstadoRT> list = new List<CambioEstadoRT>();
+
+        public void agregar()
+        {
+
+        }
     }
 }

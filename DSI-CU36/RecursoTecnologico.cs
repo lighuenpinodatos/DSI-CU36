@@ -11,7 +11,8 @@ namespace DSI_CU36
         private int _nro;
         private Modelo _modelo;
         private ListaTurno _turnos;
-        private TipoRecursoTecnologico _tipoRecursoTecnologico; 
+        private TipoRecursoTecnologico _tipoRecursoTecnologico;
+        private Mantenimiento? _mantenimiento;
         
         /*public CambioEstadoRT esDisponibleActual()
         {
