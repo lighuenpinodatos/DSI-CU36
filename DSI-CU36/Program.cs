@@ -25,8 +25,28 @@ namespace DSI_CU36
 
             // definiremos la sesion activa
             Sesion activa= new Sesion(u);
+            // Modelos con su marca
+            Modelo m1 = new Modelo("M3", new Marca("Hitachi"));
+            Modelo m2 = new Modelo("H322", new Marca("HP"));
+            Modelo m3 = new Modelo("Aviator", new Marca("Sony"));
+            Modelo m4 = new Modelo("Raft", new Marca("Oculus"));
 
-            //Lista de recursos tecnologicos
+            //Tipos de recursos
+            TipoRecursoTecnologico t1 = new TipoRecursoTecnologico("microscopio");
+            TipoRecursoTecnologico t2 = new TipoRecursoTecnologico("balanza");
+            TipoRecursoTecnologico t3 = new TipoRecursoTecnologico("resonador magnético");
+            TipoRecursoTecnologico t4 = new TipoRecursoTecnologico("supercomputadora");
+
+            //Estados 
+
+            Estado e1 = new Estado("disponible", "turno");
+            Estado e2 = new Estado("confirmado", "turno");
+            Estado e3 = new Estado("pendienteConfirmacion", "turno");
+            Estado e4 = new Estado("cancelado", "turno");
+       
+
+
+
             u.obtenerCientifico();
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
+    
     internal class ListaRecursoTecnologico
     {
 

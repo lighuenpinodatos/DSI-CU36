@@ -10,7 +10,7 @@ namespace DSI_CU36
     {
         private string _nombre;
         private string _ambito;
-        Estado(string nombre, string ambito)
+        public Estado(string nombre, string ambito)
         {
             _nombre = nombre;
             _ambito = ambito;
@@ -24,5 +24,6 @@ namespace DSI_CU36
             return false;
             
         }
+   
     }
 }

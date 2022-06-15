@@ -8,8 +8,6 @@ namespace DSI_CU36
 {
     internal class Turno
     {
-        private DateTime _fechaGeneracion;
-        private DateTime _diaSemana;
         private DateTime _fechaHoraInicio;
         private DateTime _fechaHoraFin;
         public Turno()
