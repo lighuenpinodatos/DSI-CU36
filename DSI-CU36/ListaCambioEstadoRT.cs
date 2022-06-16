@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    
-    internal class ListaCambioEstadoRT
+
+    public class ListaCambioEstadoRT
     {
         private List<CambioEstadoRT> list = new List<CambioEstadoRT>();
         

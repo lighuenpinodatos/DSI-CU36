@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class Usuario
+    public class Usuario
     {
         private int _id;
         private string _nombre;

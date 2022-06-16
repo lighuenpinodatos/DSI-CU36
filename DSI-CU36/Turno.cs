@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class Turno
+    public class Turno
     {
         private DateTime _fechaHoraInicio;
         private DateTime _fechaHoraFin;

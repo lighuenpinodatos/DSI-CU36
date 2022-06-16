@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class Marca
+    public class Marca
     {
 
         private string _nombre;

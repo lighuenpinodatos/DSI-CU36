@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class RecursoTecnologico
+    public class RecursoTecnologico
     {
         private int _nro;
         private Modelo _modelo;
@@ -16,12 +16,14 @@ namespace DSI_CU36
         private Mantenimiento? _mantenimiento;
         
         
-        public RecursoTecnologico(int numero, Modelo modelo, ListaTurno turnos, TipoRecursoTecnologico tipoRecursoTecnologico)
+        
+        public RecursoTecnologico(int numero, Modelo modelo, ListaTurno turnos, TipoRecursoTecnologico tipoRecursoTecnologico,ListaCambioEstadoRT cambiosEstadoRT)
         {
             _nro = numero;
             _modelo = modelo;
             _turnos = turnos;
             _tipoRecursoTecnologico = tipoRecursoTecnologico;
+            _cambiosEstadoRT = cambiosEstadoRT;
         }
         public int getNumero()
         {

@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <Folder Include="Entidades\" />
-    <Folder Include="Gestor\" />
     <Folder Include="Interfaces\" />
   </ItemGroup>
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class ListaTurno
+    public class ListaTurno
     {
         private List<Turno> list = new List<Turno>();
 

@@ -21,5 +21,21 @@ namespace DSI_CU36
         {
 
         }
+
+        private void generarListaRecursos_Load(object sender, EventArgs e)
+        {
+            ListViewItem item = new ListViewItem(new[] { "Microscopio", "1", "Ocular", "Tor", "Mint" });
+            listView1.Items.Add(item);
+            ListViewItem item2 = new ListViewItem(new[] { "Microscopio", "1", "Ocular", "Tor", "Mint" });
+            listView1.Items.Add(item2);
+            ListViewItem item3 = new ListViewItem(new[] { "Microscopio", "1", "Ocular", "Tor", "Mint" });
+            listView1.Items.Add(item3);
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

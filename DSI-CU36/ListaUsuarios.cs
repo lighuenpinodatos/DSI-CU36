@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class ListaUsuarios
+    public class ListaUsuarios
     {
         private List<Usuario> list = new List<Usuario>();
 

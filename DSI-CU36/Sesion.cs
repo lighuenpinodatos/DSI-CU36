@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class Sesion
+    public class Sesion
     {
         private Usuario _u; // referencia al usuario
         private DateTime _fechaHoraInicio; 

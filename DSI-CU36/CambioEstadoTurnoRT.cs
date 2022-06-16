@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class CambioEstadoTurnoRT
+    public class CambioEstadoTurnoRT
     {
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
         private Estado _estado;
-        public CambioEstadoTurnoRT(DateTime? fechaHasta=null)
+        public CambioEstadoTurnoRT(DateTime _fechaDesde,DateTime? fechaHasta,Estado estado)
         {
             _fechaDesde = DateTime.Now;
+            _fechaHasta = fechaHasta;
+            _estado = estado;
 
 
         }
         public bool esCancelable()
         {
             return _estado.esCancelable();
+        }
+        public void  setFechaHasta(DateTime fechaHasta)
+        {
+            _fechaHasta = fechaHasta;
         }
 
 

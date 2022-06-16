@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 namespace DSI_CU36
 {
     
-    internal class CambioEstadoRT
+    public class CambioEstadoRT
     {
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
         private Estado _estado;
-        private CambioEstadoRT(DateTime fechaDesde,Estado estado)
+        public CambioEstadoRT(DateTime fechaDesde, DateTime? fechaHasta, Estado estado)
         {
             _fechaDesde = fechaDesde;
-
+            _fechaHasta = fechaHasta;
             _estado = estado;
+
+            
         }
         public bool esDisponible()
         {

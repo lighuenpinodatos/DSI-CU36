@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    
-    internal class ListaRecursoTecnologico
+
+    public class ListaRecursoTecnologico
     {
 
         public List<RecursoTecnologico> list = new List<RecursoTecnologico>();

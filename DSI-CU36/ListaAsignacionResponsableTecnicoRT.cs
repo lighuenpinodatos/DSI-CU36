@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class ListaAsignacionResponsableTecnicoRT
+    public class ListaAsignacionResponsableTecnicoRT
     {
         private List<AsignacionResponsableTecnicoRT> list = new List<AsignacionResponsableTecnicoRT>();
         

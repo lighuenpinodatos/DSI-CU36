@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class Mantenimiento
+    public class Mantenimiento
     {
         private DateTime _fechaHoraInicio;
         private DateTime _fechaHoraFinPrevista;

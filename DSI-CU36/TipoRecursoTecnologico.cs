@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class TipoRecursoTecnologico
+    public class TipoRecursoTecnologico
     {
         private string _nombre;
 

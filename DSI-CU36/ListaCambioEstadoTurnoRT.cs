@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class ListaCambioEstadoTurnoRT
+    public class ListaCambioEstadoTurnoRT
     {
         private List<CambioEstadoTurnoRT> list = new List<CambioEstadoTurnoRT>();
 
@@ -14,6 +14,10 @@ namespace DSI_CU36
         public CambioEstadoTurnoRT obtenerActual()
         {
             return list[list.Count -1];
+        }
+        public void agregar(CambioEstadoTurnoRT ceturnort)
+        {
+            list.Add(ceturnort);
         }
     }
 

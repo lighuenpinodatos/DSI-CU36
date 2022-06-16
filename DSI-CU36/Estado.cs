@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSI_CU36
 {
-    internal class Estado
+    public class Estado
     {
         private string _nombre;
         private string _ambito;
