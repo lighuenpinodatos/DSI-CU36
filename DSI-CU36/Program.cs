@@ -39,12 +39,13 @@ namespace DSI_CU36
 
             //Estados 
 
-            Estado e1 = new Estado("disponible", "turno");
-            Estado e2 = new Estado("confirmado", "turno");
-            Estado e3 = new Estado("pendienteConfirmacion", "turno");
-            Estado e4 = new Estado("cancelado", "turno");
-       
+            Estado e1 = new Estado("disponible", "turno",true);
+            Estado e2 = new Estado("confirmado", "turno", true);
+            Estado e3 = new Estado("pendienteConfirmacion", "turno", true);
+            Estado e4 = new Estado("cancelado", "turno", true);
 
+            ListaRecursoTecnologico listR = new ListaRecursoTecnologico();
+            //listR.agregar();
 
 
             u.obtenerCientifico();

@@ -9,6 +9,12 @@ namespace DSI_CU36
     internal class ListaCambioEstadoTurnoRT
     {
         private List<CambioEstadoTurnoRT> list = new List<CambioEstadoTurnoRT>();
+
+
+        public CambioEstadoTurnoRT obtenerActual()
+        {
+            return list[list.Count -1];
+        }
     }
 
 }

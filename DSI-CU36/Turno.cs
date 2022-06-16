@@ -25,5 +25,16 @@ namespace DSI_CU36
         }
 
 
+        //fechaActual < fechaTurno < fechaFinPrevista 
+        public bool  esCalcelable(DateTime fechaFinPrevista)
+        {
+            var certActual = _lcert.obtenerActual();
+            if (certActual.esCancelable() && DateTime.Now < _fechaHoraInicio && _fechaHoraInicio < fechaFinPrevista)
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }

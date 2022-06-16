@@ -13,7 +13,7 @@ namespace DSI_CU36
         public List<RecursoTecnologico> list = new List<RecursoTecnologico>();
         
 
-        public void Agregar(RecursoTecnologico rt)
+        public void agregar(RecursoTecnologico rt)
         {
             list.Add(rt);
         }
@@ -24,7 +24,7 @@ namespace DSI_CU36
                 var refRt = rt.esDisponible();
                 if (refRt != null)
                 {
-                    lrdiponibles.Agregar(refRt);
+                    lrdiponibles.agregar(refRt);
                 }
                 
             }

@@ -10,12 +10,16 @@ namespace DSI_CU36
     {
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
-        //private Estado _estado;
+        private Estado _estado;
         public CambioEstadoTurnoRT(DateTime? fechaHasta=null)
         {
             _fechaDesde = DateTime.Now;
 
 
+        }
+        public bool esCancelable()
+        {
+            return _estado.esCancelable();
         }
 
 

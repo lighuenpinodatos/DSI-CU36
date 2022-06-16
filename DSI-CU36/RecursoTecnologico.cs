@@ -43,9 +43,10 @@ namespace DSI_CU36
             return null;
             
         }
+
         public ListaTurno obtenerTurnosCancelables(DateTime fechaFinPrevista)
         {
-            return  
+            return _turnos.obtenerTurnosCancelables(fechaFinPrevista);
         }
 
     }

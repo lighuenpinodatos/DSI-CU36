@@ -29,8 +29,20 @@ namespace DSI_CU36
 -ListaTurnos [ListaTurnos] obtenerTurnosCancelables(fechaFinPrevista) Foreach {
 
  */
-        public ListaTurnos obtenerTurnosCancelables(DateTime fechaFinPrevista)
+        public ListaTurno obtenerTurnosCancelables(DateTime fechaFinPrevista)
         {
+
+            ListaTurno turnosCancelables = new ListaTurno();
+            foreach (Turno turno in list)
+            {
+                var refTurno = turno.esCalcelable(fechaFinPrevista);
+                if (refTurno)
+                {
+                    turnosCancelables.agregar(turno);
+                }
+
+            }
+            return turnosCancelables;
         }
 
     }

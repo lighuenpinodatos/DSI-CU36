@@ -10,10 +10,12 @@ namespace DSI_CU36
     {
         private string _nombre;
         private string _ambito;
-        public Estado(string nombre, string ambito)
+        private bool _esCancelable;
+        public Estado(string nombre, string ambito, bool esCancelable)
         {
             _nombre = nombre;
             _ambito = ambito;
+            _esCancelable = esCancelable;
         }
         public bool esDisponible()
         {
@@ -22,6 +24,14 @@ namespace DSI_CU36
                 return true;
             }
             return false;
+            
+        }
+        //confirmado || pendienteConfirmasion
+        public bool esCancelable()
+        {
+            
+            
+                return _esCancelable;
             
         }
    

@@ -26,7 +26,7 @@ namespace DSI_CU36
         private void button1_Click(object sender, EventArgs e)
         {
             var r =new generarListaRecursos();
-            //r.ShowDialog(this);
+            r.ShowDialog(this);
 
 
         }
