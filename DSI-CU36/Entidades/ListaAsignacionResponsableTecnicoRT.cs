@@ -4,25 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class ListaAsignacionResponsableTecnicoRT
     {
         private List<AsignacionResponsableTecnicoRT> list = new List<AsignacionResponsableTecnicoRT>();
-        
+
         public void addResposableRT(AsignacionResponsableTecnicoRT rt)
         {
             list.Add(rt);
         }
         public AsignacionResponsableTecnicoRT esDeUsuarioLogeadoYVigente(PersonalCientifico pc)
         {
-            foreach(AsignacionResponsableTecnicoRT rt in list)
+            foreach (AsignacionResponsableTecnicoRT rt in list)
             {
-                if (rt.getPersonalCientifico() == pc && rt.getfechaHasta()==null) {
+                if (rt.getPersonalCientifico() == pc && rt.getfechaHasta() == null)
+                {
                     return rt;
                 }
 
-            }return null;
+            }
+            return null;
         }
 
 

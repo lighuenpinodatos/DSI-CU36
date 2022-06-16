@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class RecursoTecnologico
     {
@@ -14,10 +14,10 @@ namespace DSI_CU36
         private ListaCambioEstadoRT _cambiosEstadoRT;
         private TipoRecursoTecnologico _tipoRecursoTecnologico;
         private Mantenimiento? _mantenimiento;
-        
-        
-        
-        public RecursoTecnologico(int numero, Modelo modelo, ListaTurno turnos, TipoRecursoTecnologico tipoRecursoTecnologico,ListaCambioEstadoRT cambiosEstadoRT)
+
+
+
+        public RecursoTecnologico(int numero, Modelo modelo, ListaTurno turnos, TipoRecursoTecnologico tipoRecursoTecnologico, ListaCambioEstadoRT cambiosEstadoRT)
         {
             _nro = numero;
             _modelo = modelo;
@@ -36,14 +36,14 @@ namespace DSI_CU36
         public string getModelo()
         {
             return _modelo.mostrarNombre();
-        } 
+        }
         public RecursoTecnologico? esDisponible()
         {
             // cambio de estado actual
             CambioEstadoRT cea = _cambiosEstadoRT.obtenerActual();
             if (cea.esDisponible()) { return this; }
             return null;
-            
+
         }
 
         public ListaTurno obtenerTurnosCancelables(DateTime fechaFinPrevista)

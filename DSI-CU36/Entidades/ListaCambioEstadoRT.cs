@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
 
     public class ListaCambioEstadoRT
     {
         private List<CambioEstadoRT> list = new List<CambioEstadoRT>();
-        
+
         public void agregar(CambioEstadoRT cert)
         {
             list.Add(cert);

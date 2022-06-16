@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class Usuario
     {
@@ -19,7 +19,7 @@ namespace DSI_CU36
 
 
         }
-        public Usuario(int id,string nombre, string clave, PersonalCientifico pc)
+        public Usuario(int id, string nombre, string clave, PersonalCientifico pc)
         {
             _id = id;
             _nombre = nombre;

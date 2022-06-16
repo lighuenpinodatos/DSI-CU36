@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
 
     public class PersonalCientifico
@@ -14,7 +14,7 @@ namespace DSI_CU36
         private string _nombre;
         private string _apellido;
         private int _id;
-        public PersonalCientifico(int id,string legajo, string nombre, string apellido)
+        public PersonalCientifico(int id, string legajo, string nombre, string apellido)
         {
             _legajo = legajo;
             _id = id;

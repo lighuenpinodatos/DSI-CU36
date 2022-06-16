@@ -9,9 +9,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Entidades\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
 </Project>

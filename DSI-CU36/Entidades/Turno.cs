@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class Turno
     {
@@ -12,12 +12,12 @@ namespace DSI_CU36
         private DateTime _fechaHoraFin;
         private ListaCambioEstadoTurnoRT _lcert;
         private PersonalCientifico _pc;
-        public Turno(DateTime fechaHoraInicio, DateTime fechaHoraFin,ListaCambioEstadoTurnoRT lcert, PersonalCientifico pc)
+        public Turno(DateTime fechaHoraInicio, DateTime fechaHoraFin, ListaCambioEstadoTurnoRT lcert, PersonalCientifico pc)
         {
             _fechaHoraInicio = fechaHoraInicio;
             _fechaHoraFin = fechaHoraFin;
             _lcert = lcert;
-            _pc = pc;   
+            _pc = pc;
         }
         public PersonalCientifico obtenerPersonalCientifico()
         {
@@ -26,7 +26,7 @@ namespace DSI_CU36
 
 
         //fechaActual < fechaTurno < fechaFinPrevista 
-        public bool  esCalcelable(DateTime fechaFinPrevista)
+        public bool esCalcelable(DateTime fechaFinPrevista)
         {
             var certActual = _lcert.obtenerActual();
             if (certActual.esCancelable() && DateTime.Now < _fechaHoraInicio && _fechaHoraInicio < fechaFinPrevista)

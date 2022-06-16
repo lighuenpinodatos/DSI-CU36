@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class Sesion
     {
         private Usuario _u; // referencia al usuario
-        private DateTime _fechaHoraInicio; 
+        private DateTime _fechaHoraInicio;
         public Sesion(Usuario u)
         {
             _u = u;

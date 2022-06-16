@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class Estado
     {
@@ -24,16 +24,16 @@ namespace DSI_CU36
                 return true;
             }
             return false;
-            
+
         }
         //confirmado || pendienteConfirmasion
         public bool esCancelable()
         {
-            
-            
-                return _esCancelable;
-            
+
+
+            return _esCancelable;
+
         }
-   
+
     }
 }

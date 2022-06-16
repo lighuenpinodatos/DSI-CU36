@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
 
     public class ListaRecursoTecnologico
     {
 
         public List<RecursoTecnologico> list = new List<RecursoTecnologico>();
-        
+
 
         public void agregar(RecursoTecnologico rt)
         {
@@ -19,14 +19,15 @@ namespace DSI_CU36
         }
         public ListaRecursoTecnologico esDisponible()
         {
-            ListaRecursoTecnologico lrdiponibles= new ListaRecursoTecnologico();
-            foreach (RecursoTecnologico rt in list) {
+            ListaRecursoTecnologico lrdiponibles = new ListaRecursoTecnologico();
+            foreach (RecursoTecnologico rt in list)
+            {
                 var refRt = rt.esDisponible();
                 if (refRt != null)
                 {
                     lrdiponibles.agregar(refRt);
                 }
-                
+
             }
             return lrdiponibles;
         }

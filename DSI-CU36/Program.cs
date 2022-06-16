@@ -1,3 +1,5 @@
+using DSI_CU36.Entidades;
+
 namespace DSI_CU36
 {
     internal static class Program

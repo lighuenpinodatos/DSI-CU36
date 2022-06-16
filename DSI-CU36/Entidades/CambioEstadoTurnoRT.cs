@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class CambioEstadoTurnoRT
     {
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
         private Estado _estado;
-        public CambioEstadoTurnoRT(DateTime _fechaDesde,DateTime? fechaHasta,Estado estado)
+        public CambioEstadoTurnoRT(DateTime _fechaDesde, DateTime? fechaHasta, Estado estado)
         {
             _fechaDesde = DateTime.Now;
             _fechaHasta = fechaHasta;
@@ -23,7 +23,7 @@ namespace DSI_CU36
         {
             return _estado.esCancelable();
         }
-        public void  setFechaHasta(DateTime fechaHasta)
+        public void setFechaHasta(DateTime fechaHasta)
         {
             _fechaHasta = fechaHasta;
         }

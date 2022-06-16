@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
-   public class AsignacionResponsableTecnicoRT
+    public class AsignacionResponsableTecnicoRT
     {
         private DateTime _fechaDesde;
         private DateTime? _fechaHasta;
 
         private ListaRecursoTecnologico _list;
         private PersonalCientifico _pc; // asosiacion con personal cientifico
-        public AsignacionResponsableTecnicoRT(PersonalCientifico _pc, DateTime fechaDesde,ListaRecursoTecnologico list)
+        public AsignacionResponsableTecnicoRT(PersonalCientifico _pc, DateTime fechaDesde, ListaRecursoTecnologico list)
         {
             _fechaDesde = DateTime.Now;
             _list = list;
@@ -32,8 +32,8 @@ namespace DSI_CU36
         }
         public ListaRecursoTecnologico busacarRecursosDisponibles()
         {
-            
-           return _list.esDisponible();
+
+            return _list.esDisponible();
         }
     }
 }

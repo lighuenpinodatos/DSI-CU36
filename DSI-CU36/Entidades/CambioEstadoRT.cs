@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
-    
+
     public class CambioEstadoRT
     {
         private DateTime _fechaDesde;
@@ -18,7 +18,7 @@ namespace DSI_CU36
             _fechaHasta = fechaHasta;
             _estado = estado;
 
-            
+
         }
         public bool esDisponible()
         {

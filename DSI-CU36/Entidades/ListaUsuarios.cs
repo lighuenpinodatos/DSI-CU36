@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSI_CU36
+namespace DSI_CU36.Entidades
 {
     public class ListaUsuarios
     {
@@ -14,7 +14,7 @@ namespace DSI_CU36
         public ListaUsuarios()
         {
             //list.Add(new Usuario(1,"Juan","1234"), new Usuario(2, "Hernesto", "1234"), new Usuario(13 ,"Gloria", "1234"));
-       } 
+        }
         public Usuario getUsuario(int id)
         {
             foreach (Usuario u in list)
@@ -26,7 +26,7 @@ namespace DSI_CU36
 
             }
             return null;
-        
+
         }
     }
 }
